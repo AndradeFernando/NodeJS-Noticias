@@ -9,6 +9,7 @@ app.set('views', './app/views');
 app.use(expressValidator());
 var api = express.Router();
 app.use(bodyParser.urlencoded({extended: true}))
+app.use(express.static('./app/public'));
 
 
 consign().
